@@ -4,7 +4,7 @@ public class OrdenacaoBubbleService {
 
     public void ordenarBubble()
     {
-        int tamanho = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade de números do vetor"));
+        int tamanho = 10;
 
         int[] vetor = new int[tamanho];
 
