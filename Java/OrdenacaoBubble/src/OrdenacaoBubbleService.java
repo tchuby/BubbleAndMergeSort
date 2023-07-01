@@ -2,8 +2,11 @@ import javax.swing.*;
 
 public class OrdenacaoBubbleService {
 
+    long startTime = System.nanoTime();
     public void ordenarBubble()
     {
+        long tempoInicial = System.currentTimeMillis();
+
         int tamanho = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade de números do vetor"));
 
         int[] vetor = new int[tamanho];
@@ -27,6 +30,7 @@ public class OrdenacaoBubbleService {
                     break;
             }
         }
+
     }
 
     private void cadastrar(int[] vetor)
@@ -38,6 +42,7 @@ public class OrdenacaoBubbleService {
 
     private void ordenar(int[] vetor)
     {
+        long tempoInicial = System.currentTimeMillis();
         int n = vetor.length;
         for(int i = 0; i < n; i++){
             for(int j = 0; j < (n - i -1); j++){
@@ -48,7 +53,9 @@ public class OrdenacaoBubbleService {
                 }
             }
         }
-
+        long tempoFinal = System.currentTimeMillis();
+        long tempoTotal = tempoFinal - tempoInicial;
+        System.out.println("0 tempo final é de: " + tempoTotal);
     }
 
     private void mostrar(int[] vetor)
@@ -63,5 +70,7 @@ public class OrdenacaoBubbleService {
         }
         resultado.append("]");
         JOptionPane.showMessageDialog(null, resultado);
+
     }
+
 }
