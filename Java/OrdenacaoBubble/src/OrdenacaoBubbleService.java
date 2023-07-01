@@ -5,9 +5,13 @@ public class OrdenacaoBubbleService {
     long startTime = System.nanoTime();
     public void ordenarBubble()
     {
+<<<<<<< HEAD
         long tempoInicial = System.currentTimeMillis();
 
         int tamanho = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade de números do vetor"));
+=======
+        int tamanho = 10;
+>>>>>>> main
 
         int[] vetor = new int[tamanho];
 
