@@ -1,17 +1,18 @@
 import javax.swing.*;
+import java.util.Random;
 
 public class OrdenacaoBubbleService {
 
     long startTime = System.nanoTime();
     public void ordenarBubble()
     {
-<<<<<<< HEAD
+//<<<<<<< HEAD
         long tempoInicial = System.currentTimeMillis();
 
-        int tamanho = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade de números do vetor"));
-=======
+//=======
         int tamanho = 10;
->>>>>>> main
+
+//>>>>>>> main
 
         int[] vetor = new int[tamanho];
 
@@ -39,8 +40,9 @@ public class OrdenacaoBubbleService {
 
     private void cadastrar(int[] vetor)
     {
+        Random random = new Random();
         for(int i = 0; i < vetor.length; i++){
-            vetor[i] =  Integer.parseInt(JOptionPane.showInputDialog("Digite o " + (i+1) + "º número do vetor: \n"));
+            vetor[i] =  Integer.parseInt(JOptionPane.showInputDialog("Valores aleatórios coletados: ", random.nextInt(100)));
         }
     }
 
