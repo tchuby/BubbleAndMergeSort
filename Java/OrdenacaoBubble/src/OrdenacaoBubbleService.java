@@ -6,13 +6,13 @@ public class OrdenacaoBubbleService {
     long startTime = System.nanoTime();
     public void ordenarBubble()
     {
-//<<<<<<< HEAD
+
         long tempoInicial = System.currentTimeMillis();
 
-//=======
+
         int tamanho = 10;
 
-//>>>>>>> main
+
 
         int[] vetor = new int[tamanho];
 
