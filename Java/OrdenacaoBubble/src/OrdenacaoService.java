@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.lang.Math;
 
 public class OrdenacaoService {
 
@@ -105,7 +104,7 @@ public class OrdenacaoService {
             {
                 auxiliar[k] = vetor[i];
                 i++;
-                j++;
+                k++;
             }
 
             while(j <= posicaoFinal)
@@ -117,7 +116,7 @@ public class OrdenacaoService {
 
             for(int p = posicaoInicial; p <= posicaoFinal; p++)
             {
-                vetor[i] = auxiliar[i];
+                vetor[p] = auxiliar[p];
             }
         }
     }
