@@ -1,3 +1,5 @@
+import java.util.Random;
+
 import javax.swing.*;
 
 public class OrdenacaoService {
@@ -39,10 +41,10 @@ public class OrdenacaoService {
 
     private void cadastrar(int[] vetor)
     {
+        Random random = new Random();
+
         for(int i = 0; i < vetor.length; i++){
-            vetor[i] =  Integer.parseInt(
-                            JOptionPane.showInputDialog("Digite o " + (i+1) + 
-                            "º número do vetor: \n"));
+            vetor[i] =  random.nextInt(100);
         }
     }
 
@@ -123,7 +125,7 @@ public class OrdenacaoService {
 
     private void mostrar(int[] vetor)
     {
-        StringBuilder resultado = new StringBuilder("Vetor ordenado: [");
+        StringBuilder resultado = new StringBuilder("Vetor: [");
         for(int i = 0; i < vetor.length; i++)
         {
             if(i == 0)
