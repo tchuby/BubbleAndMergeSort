@@ -1,0 +1,19 @@
+== Arquitura e Modelagem de Sistemas ==
+Avaliações
+10% integrada;
+30% exercícios;
+60% provas (2 provavelmente);
+
+Arquitetura de programação para Web
+
+W3C => consórcio que define os padrões 
+da internet: HTML, redes etc...
+
+Http porta padrão 80
+Https 443
+
+diretório para publicar site
+xampp >> htdocs
+
+Endereço IPv4. . . . . . . .  . . . . . . . : 10.3.18.52
+SN-345300
